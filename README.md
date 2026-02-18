@@ -79,33 +79,24 @@ The plugin includes this baseline:
 
 Tune org aliases and server flags for your environment and governance requirements.
 
-## Local Validation Checklist
+## Usage Examples
 
-- Plugin name is unique, lowercase, and kebab-case.
-- Paths in manifest are relative and valid.
-- All `SKILL.md`, commands, agents, and rules contain valid frontmatter.
-- `.mcp.json` parses and MCP server starts in Cursor.
-- At least one full flow succeeds:
-  - org auth -> retrieve -> validate/deploy -> tests -> post-check.
+Try prompts like:
 
-## Publish Workflow
+- "Use Salesforce DX MCP to list my available orgs and show default target org."
+- "Validate deployment of my package manifest to UAT with RunLocalTests."
+- "Run an Apex test suite and summarize failing tests with likely root causes."
+- "Run an sf CLI command: sf org list --all and explain the output."
+- "Plan a production release with rollback notes and post-deploy checks."
 
-1. Push this plugin folder to a public Git repository.
-2. Confirm `author`, `homepage`, and `repository` values in `.cursor-plugin/plugin.json`.
-3. Submit repository via `https://cursor.com/marketplace/publish`.
-4. Address review feedback and republish.
+## Maintainer Notes
 
-## Best-Practice Sources
+- Maintainer/release checklist: `PUBLISH_CHECKLIST.md`
+- Plugin manifest: `.cursor-plugin/plugin.json`
+- MCP server config: `.mcp.json`
 
-- Cursor:
-  - https://cursor.com/marketplace
-  - https://cursor.com/docs/plugins/building
-- Salesforce:
-  - https://architect.salesforce.com/well-architected/overview
-  - https://architect.salesforce.com/docs/architect/well-architected-tools/guide/patterns
-  - https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm
-  - https://developer.salesforce.com/docs/platform/lwc/guide/perf-intro.html
-  - https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_intro
-  - https://developer.salesforce.com/blogs/2025/01/spring25-developers
-  - https://developer.salesforce.com/blogs/2026/01/developers-guide-to-the-spring-26-release
-  - https://github.com/salesforcecli/mcp
+## References
+
+- Cursor Marketplace: https://cursor.com/marketplace
+- Cursor plugin docs: https://cursor.com/docs/plugins/building
+- Salesforce DX MCP: https://github.com/salesforcecli/mcp
