@@ -1,0 +1,24 @@
+---
+description: Salesforce-safe delivery defaults for Apex, LWC, and metadata changes.
+alwaysApply: false
+globs:
+  - "**/*.cls"
+  - "**/*.trigger"
+  - "**/*.page"
+  - "**/*.component"
+  - "**/lwc/**/*.js"
+  - "**/lwc/**/*.html"
+  - "**/sfdx-project.json"
+---
+
+# Salesforce Safe Defaults
+
+1. Prefer a layered architecture: trigger handler -> service/domain -> selector/repository.
+2. Never run SOQL, SOSL, or DML inside loops; collect records and execute once.
+3. Enforce data access rules in Apex (`with sharing`, CRUD/FLS checks, `Security.stripInaccessible` where relevant).
+4. Keep automations deterministic and idempotent, especially for retry or async paths.
+5. Before deployment, prefer a validation-first flow (check-only / dry-run) and run at least local tests.
+6. For high-risk changes, include rollback notes and impacted metadata list in the change plan.
+7. For LWC, use stable keys in lists, avoid unnecessary re-renders, and clean up external listeners in `disconnectedCallback`.
+8. When limits are tight, move heavy workloads to async patterns (Queueable, Batch, Platform Events).
+9. Support any valid Salesforce DX MCP or `sf` CLI capability requested by the user; do not limit to curated happy-path commands.

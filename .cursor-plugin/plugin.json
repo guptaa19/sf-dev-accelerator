@@ -1,0 +1,29 @@
+{
+  "name": "sf-dev-accelerator",
+  "version": "0.2.0",
+  "description": "Independent Salesforce development plugin for Cursor with full-surface DX MCP and CLI workflows, architecture skills, release automation, and testing guidance.",
+  "author": {
+    "name": "Ashish Gupta"
+  },
+  "homepage": "https://github.com/guptaa19/sf-dev-accelerator",
+  "repository": "https://github.com/guptaa19/sf-dev-accelerator",
+  "license": "MIT",
+  "keywords": [
+    "salesforce",
+    "sf-cli",
+    "apex",
+    "lwc",
+    "mcp",
+    "devops",
+    "testing",
+    "architecture",
+    "agentforce",
+    "data-cloud"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "skills",
+  "rules": "rules",
+  "agents": "agents",
+  "commands": "commands",
+  "mcpServers": ".mcp.json"
+}
