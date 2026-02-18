@@ -2,6 +2,35 @@
 
 Salesforce plugin for Cursor with broad operational coverage across Salesforce DX MCP and Salesforce CLI.
 
+## Installation
+
+**For Cursor (after Marketplace approval):**
+
+Run this command in chat:
+
+```text
+/add-plugin sf-dev-accelerator
+```
+
+You can also install from the Cursor Marketplace page when the plugin listing is live.
+
+## How users use this plugin
+
+You do **not** install skills/rules/commands one by one. Installing the plugin adds all bundled components automatically.
+
+- Skills are loaded and applied by the agent when relevant.
+- Rules provide persistent guidance for Salesforce-safe defaults.
+- Commands provide reusable operation flows (deploy, tests, metadata, data, packaging, etc.).
+- Agents provide specialized operating modes (release operator, solution architect).
+- MCP config enables Salesforce DX MCP capability routing.
+
+After install, users can work in natural language, for example:
+
+- "List orgs and show my default target org."
+- "Validate deployment for this manifest and run local tests."
+- "Run Apex tests and summarize failures with probable root causes."
+- "Use sf CLI to run `sf org list --all` and explain results."
+
 ## What "full capability" means in this plugin
 
 The plugin is designed to handle the complete practical Salesforce development lifecycle:
