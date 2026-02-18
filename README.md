@@ -1,18 +1,6 @@
 # SF Dev Accelerator (Cursor Plugin)
 
-Independent Salesforce plugin for Cursor with broad operational coverage across Salesforce DX MCP and Salesforce CLI.
-
-This plugin is intentionally isolated under:
-`cursor-marketplace-plugins/salesforce-dev-accelerator`
-to avoid confusion with unrelated repository code.
-
-## Independence and Affiliation
-
-This plugin is an independent project.
-
-- Not affiliated with or endorsed by Salesforce.
-- Not affiliated with or endorsed by Cursor/Anysphere.
-- Not affiliated with or endorsed by Liberty State.
+Salesforce plugin for Cursor with broad operational coverage across Salesforce DX MCP and Salesforce CLI.
 
 ## What "full capability" means in this plugin
 
